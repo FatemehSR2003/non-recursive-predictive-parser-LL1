@@ -23,8 +23,8 @@ Implementing a non-recursive predictive parser using the LL(1) method
 Overall, the code allows the user to define a context-free grammar, calculates the FIRST and FOLLOW sets, constructs an LL(1) parsing table, and performs LL(1) parsing on input strings according to the grammar rules.
 
 ▎Input/Output
-1) 
 
+1) 
 5
 E->TS
 S->+TS|Ɛ
@@ -37,7 +37,6 @@ i+i*i  Accept
 i-i    Error
 
 2) 
-
 3
 S->iEtSA|a
 A->t|eS|i|e
