@@ -25,7 +25,7 @@ Overall, the code allows the user to define a context-free grammar, calculates t
 ▎Input/Output
 
 1) 
-number_of_nonterminals = 5
+number_of_nonterminals = 5.
 E->TS
 S->+TS|Ɛ
 T->FA
