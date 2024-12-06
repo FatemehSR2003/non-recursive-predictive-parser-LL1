@@ -25,7 +25,7 @@ Overall, the code allows the user to define a context-free grammar, calculates t
 ▎Input/Output
 
 1) 
-5
+number_of_nonterminals = 5
 E->TS
 S->+TS|Ɛ
 T->FA
@@ -37,17 +37,17 @@ i+i*i  Accept
 i-i    Error
 
 2) 
-3
-S->iEtSA|a
-A->t|eS|i|e
-E->b
+number_of_nonterminals = 3
+rules = S->iEtSA|a  ,
+A->t|eS|i|e   ,
+E->b 
 S
 
 not LL(1) because FIFI
 
 3) 
 
-3
+number_of_nonterminals = 3
 S->iEtSA|a
 A->Ɛ|eS
 E->b
@@ -57,7 +57,7 @@ not LL(1) because FIFO
 
 4) 
 
-4
+number_of_nonterminals = 4
 S->ABC
 A->a|Ɛ
 B->b|Ɛ
@@ -69,7 +69,7 @@ ba Error
 
 5) 
 
-4
+number_of_nonterminals = 4
 S->ABC
 A->a|Ɛ
 B->b|Ɛ
@@ -81,7 +81,7 @@ bc Accept
 
 6) 
 
-3
+number_of_nonterminals = 3
 S->AaAb|BbBa
 A->Ɛ
 B->Ɛ
@@ -92,7 +92,7 @@ ab Accept
 
 7) 
 
-2
+number_of_nonterminals = 2
 S->SA|A
 A->a
 S
@@ -101,18 +101,12 @@ not LL(1)
 
 8) 
 
-2
+number_of_nonterminals = 2
 S->AS|b
 A->SA|a
 S
 
 not LL(1)
-
-3
-S->ASB|Ɛ
-A->aA|Ɛ
-B->bB|Ɛ
-S
 
 ▎License
 
